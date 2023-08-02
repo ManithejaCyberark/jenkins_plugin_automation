@@ -1,0 +1,41 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - string:
+          description: "LOGINCREDENTIALSTOCONJUR"
+          id: "LOGINCREDENTIALSTOCONJUR"
+          scope: GLOBAL
+          #secret: "{AQAAABAAAABAzeQNU69ICoClWlgLKDpRPaZmN1Eek9VH4SL8ggPk0VYaD2v/UMAOybU36Mc5LQl/MRrUaAUwpkytYLivrfaA0k6BGBybBgye9eXFkjo4sXI=}"
+          secret: ${API_KEYS}
+# jenkins:
+#   securityRealm:
+#     local:
+#       allowsSignup: false
+#       users:
+#        - id: ${JENKINS_ADMIN_ID}
+#          password: ${JENKINS_ADMIN_PASSWORD}
+#   authorizationStrategy:
+#     globalMatrix:
+#       permissions:
+#         - "Overall/Administer:admin"
+#         - "Overall/Read:authenticated"      
+unclassified:
+  location:
+    url: ${JENKINS_URL}
+  globalConjurConfiguration:
+    conjurConfiguration:
+      account: ${CONJURACCOUNT}
+      applianceURL: ${APPLIANCEURL}
+    authWebServiceId: ${SERVICEID}
+    jwtAudience: ${JWT_AUDIENCE}
+    enableContextAwareCredentialStore: true
+    enableJWKS: true
+    identityFieldsSeparator: "-"
+    identityFormatFieldsFromToken: "aud,jenkins_name"
+    keyLifetimeInMinutes: 60
+    tokenDurarionInSeconds: 120
+
+jobs:
+  - file: /usr/local/seedjob.groovy
+  - file: /usr/local/folder.groovy
