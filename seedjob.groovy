@@ -1,3 +1,4 @@
+//groovy script for freestyle project
 freeStyleJob('freeStyleJob') {
   steps {
     shell('''
