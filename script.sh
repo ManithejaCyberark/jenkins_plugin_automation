@@ -1,14 +1,14 @@
 #!/bin/bash
 
-#environment variables
-JENKINS_ADMIN_ID=admin 
-JENKINS_ADMIN_PASSWORD=password 
-CONJUR_ACCESS_TOKEN=$ACCESS_TOKEN 
-JENKINS_URL="http://localhost:8083" 
-CONJURACCOUNT="myConjurAccount" 
-APPLIANCEURL="http://conjur_server" 
-SERVICEID="jenkins"  
-JWT_AUDIENCE="jenkins-server"
+# #environment variables
+# JENKINS_ADMIN_ID=admin 
+# JENKINS_ADMIN_PASSWORD=password 
+# CONJUR_ACCESS_TOKEN=$ACCESS_TOKEN 
+# JENKINS_URL="http://localhost:8083" 
+# CONJURACCOUNT="myConjurAccount" 
+# APPLIANCEURL="http://conjur_server" 
+# SERVICEID="jenkins"  
+# JWT_AUDIENCE="jenkins-server"
 # CONJUR_CREDENTIALS_PLUGIN=conjur-credentials:1.0.15 
 
 #build dockerfile
