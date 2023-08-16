@@ -1,4 +1,4 @@
-#groovy script to create folder
+// groovy script to create folder
 folder('Dev-Team-1') {
     // displayName('Dev-Team-1')
     description('Folder for Dev-Team')
