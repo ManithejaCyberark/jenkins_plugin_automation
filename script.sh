@@ -24,4 +24,4 @@ docker run --name jenkins_jcasc --rm -p 8085:8080 \
 --env SERVICEID=${SERVICEID}  \
 --env JWT_AUDIENCE=${JWT_AUDIENCE} \
 # --env CONJUR_CREDENTIALS_PLUGIN=${CONJUR_CREDENTIALS_PLUGIN} \
-jenkins:jcasc \
+jenkins:jcasc
