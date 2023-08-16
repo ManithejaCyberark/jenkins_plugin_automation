@@ -14,6 +14,8 @@
 #build dockerfile
 docker build -t jenkins:jcasc .
 
+docker images ls | grep jenkins:jcasc
+
 docker run --name jenkins_jcasc --rm -p 8085:8080 \
 --env JENKINS_ADMIN_ID=admin \
 --env JENKINS_ADMIN_PASSWORD=password \
