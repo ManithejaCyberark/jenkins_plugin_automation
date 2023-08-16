@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("git clone"){
       steps{
-        git branch: 'origin', url: 'https://github.com/ManithejaCyberark/jenkins_plugin_automation.git'
+        git 'https://github.com/ManithejaCyberark/jenkins_plugin_automation.git'
       }
     }
     stage("spin jenkins instance"){
